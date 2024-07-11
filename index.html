@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Manuel Krapovickas">
+    <title>S1.2. Bootstrap & SASS</title>
+
+    <!-- Incluir el archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Enlace al archivo CSS compilado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-4 pb-5" style="background-color:blueviolet;">
+            <div class="col">
+                <img class="img-fluid mt-3 pt-1" src="Imagenes/logo-bookmark.svg" alt="logo-bookmark"
+                    style="max-width: 100%">
+            </div>
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light custom-bg-color">
+                    <div class="container-fluid">
+                        <div class="d-flex justify-content-end w-100">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link m-2 mt-0" href="#">FEATURES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link m-2 mt-0" href="#">PRICING</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link m-2 mt-0" href="#">CONTACT</a>
+                                </li>
+                                <li class="nav-item ms-4">
+                                    <button type="button" class="btn btn-primary">
+                                        <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3 text-white" href="#">LOGIN</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+       <div class="row pt-5 mt-2" style="background-color: aqua;">
+            <div class="col-6">
+                <div class="card" style="width: 22rem;">
+                    <div class="card-body">
+                      <h3 class="card-title fw-bold">A Simple Bookmark Manager</h5>
+                      <p class="card-text p-1">A clean and simple interface to organize your favourite websites. Open a new
+                        browser tab and see your sites load instantly. Try it for free</p>
+                        <button type="button" class="btn btn-primary">
+                            <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3 text-white" href="#">Get it on Chrome</a>
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3 text-white" href="#">Get it on Firefox</a>
+                        </button>
+                      <!-- <a href="#" class="card-link">Get it on Chrome</a> -->
+                      <!-- <a href="#" class="card-link">Get it on Firefox</a> -->
+                    </div>
+                  </div>
+            </div>
+            <div class="col-6">
+                <img class="img-fluid" src="Imagenes/illustration-hero.svg" alt="illustration-hero">
+            </div>
+        </div>
+    </div>
+
+    <!-- Incluir el archivo JS de Bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

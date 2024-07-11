@@ -1,0 +1,62 @@
+
+
+// Variables
+$primary-color: #5265E1;
+$secondary-color: #FA5959;
+
+// body {
+//   font-family: Arial, sans-serif;
+//   color: $primary-color;
+// }
+
+//navbar custom bg color
+.custom-bg-color {
+  background-color: white;
+}
+
+.navbar-text {
+  margin-bottom: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+.navbar-nav .nav-link {
+  /* font-family: 'Rubik', sans-serif; */
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+.btn, .btn-primary .nav-link {
+  font-weight: 700;
+  font-size: 0.875rem;
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  
+}
+
+.collapse, .navbar-collapse {
+  text-align: center;
+  margin-top: 3px;
+.navbar-nav {
+  align-items: end;
+}
+.nav-item {
+  padding: 0px;
+  margin-bottom: -0.5rem;
+}  
+}
+
+
+// z-index -1 absolute el div con la foto y atras img fluid border botoom left radius, absolute la mancha relative la foto
+// un div con la imagen y otro adentro con la mancha
+
+
+// @media (max-width: 767px) {
+//   /* Add your custom styles for the collapsed navbar here */
+//   .navbar-collapse {
+//     text-align: center; /* Change alignment to center */
+//     margin-top: 100px; /* Add margin to the top */
+//     /* Add any other styles you want to change */
+//     padding: 0px;
+//   }
+// }
