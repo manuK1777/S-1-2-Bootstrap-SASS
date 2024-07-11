@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row mt-4 pb-5" style="background-color:blueviolet;">
+    <header class="container mt-4 pb-5">
+        <div class="row">
             <div class="col">
                 <img class="img-fluid mt-3 pt-1" src="Imagenes/logo-bookmark.svg" alt="logo-bookmark"
                     style="max-width: 100%">
@@ -41,8 +41,8 @@
                                 <li class="nav-item">
                                     <a class="nav-link m-2 mt-0" href="#">CONTACT</a>
                                 </li>
-                                <li class="nav-item ms-4">
-                                    <button type="button" class="btn btn-primary">
+                                <li class="nav-item ms-4 mb-1">
+                                    <button type="button" class="btn btn-primary" id="loginButton">
                                         <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3 text-white" href="#">LOGIN</a>
                                     </button>
                                 </li>
@@ -52,29 +52,33 @@
                 </nav>
             </div>
         </div>
-       <div class="row pt-5 mt-2" style="background-color: aqua;">
-            <div class="col-6">
-                <div class="card" style="width: 22rem;">
+    </header>
+
+    <main class="container pt-5 mt-2">
+        <div class="row flex-column row align-items-end flex-md-row d-flex">
+            <div class="card col-12 col-md-6 order-2 order-md-1 mt-3 mb-5 col align-self-center text-center text-md-start">
+                <div class="card" style="width: 24rem;">
                     <div class="card-body">
-                      <h3 class="card-title fw-bold">A Simple Bookmark Manager</h5>
-                      <p class="card-text p-1">A clean and simple interface to organize your favourite websites. Open a new
-                        browser tab and see your sites load instantly. Try it for free</p>
-                        <button type="button" class="btn btn-primary">
-                            <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3 text-white" href="#">Get it on Chrome</a>
-                        </button>
-                        <button type="button" class="btn btn-primary">
-                            <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3 text-white" href="#">Get it on Firefox</a>
-                        </button>
-                      <!-- <a href="#" class="card-link">Get it on Chrome</a> -->
-                      <!-- <a href="#" class="card-link">Get it on Firefox</a> -->
+                        <h3 class="card-title fw-bold">A Simple Bookmark Manager</h5>
+                            <p class="card-text p-1">A clean and simple interface to organize your favourite websites.
+                                Open
+                                a new
+                                browser tab and see your sites load instantly. Try it for free</p>
+                            <button type="button" class="btn btn-primary btn-sm mt-2">
+                                <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3 text-white" href="#">Get it on Chrome</a>
+                            </button>
+                            <button type="button" class="btn btn-light btn-sm mt-2 custom-bg-gray shadow-lg">
+                                <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3" href="#">Get it on Firefox</a>
+                            </button>
                     </div>
-                  </div>
+                </div>
             </div>
-            <div class="col-6">
-                <img class="img-fluid" src="Imagenes/illustration-hero.svg" alt="illustration-hero">
+            <div class="col-12 col-md-6 order-1 order-md-2 my-5 text-center position-relative">
+                <img src="Imagenes/illustration-hero.svg" class="img-fluid" alt="illustration-hero">
+            <div class="blue-right-shadow"></div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!-- Incluir el archivo JS de Bootstrap -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

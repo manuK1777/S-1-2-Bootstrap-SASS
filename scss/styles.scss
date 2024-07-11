@@ -3,6 +3,7 @@
 // Variables
 $primary-color: #5265E1;
 $secondary-color: #FA5959;
+$custom-gray: #f1e9e9;
 
 // body {
 //   font-family: Arial, sans-serif;
@@ -12,6 +13,16 @@ $secondary-color: #FA5959;
 //navbar custom bg color
 .custom-bg-color {
   background-color: white;
+}
+
+#loginButton {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+}
+
+.custom-bg-gray {
+  background-color: $custom-gray;
+  border: $custom-gray;
 }
 
 .navbar-text {
@@ -29,8 +40,8 @@ body {
 .btn, .btn-primary .nav-link {
   font-weight: 700;
   font-size: 0.875rem;
-  background-color: $secondary-color;
-  border-color: $secondary-color;
+  // background-color: $secondary-color;
+  // border-color: $secondary-color;
   
 }
 
@@ -40,13 +51,45 @@ body {
 .navbar-nav {
   align-items: end;
 }
+
 .nav-item {
   padding: 0px;
   margin-bottom: -0.5rem;
 }  
 }
 
+.card {
+  border: none;
+}
 
+.img-main {
+  position: relative;
+  z-index: 1;
+}
+
+.blue-right-shadow {
+  position: absolute;
+  z-index: -1;
+  left: 30%;
+  top: 0;
+  width: 85%;
+  height: 70%;
+  top: 35%;
+  background: #5266df;
+  border-bottom-left-radius: 8rem;
+}
+
+// .blue-left-shadow {
+//   position: absolute;
+//   z-index: -1;
+//   right: 10;
+//   top: 10;
+//   width: 110%;
+//   height: 80%;
+//   top: 35%;
+//   background: $primary-color;
+//   border-bottom-right-radius: 8rem;
+// }
 // z-index -1 absolute el div con la foto y atras img fluid border botoom left radius, absolute la mancha relative la foto
 // un div con la imagen y otro adentro con la mancha
 
