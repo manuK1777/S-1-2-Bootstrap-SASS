@@ -5,24 +5,19 @@ html {
 *,
 *::before,
 *::after {
-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 * {
-margin: 0;
-padding: 0;
-/*to override the default browser setup*/
+  margin: 0;
+  padding: 0;
+  /*to override the default browser setup*/
 }
 
 // Variables
 $primary-color: #5265E1;
 $secondary-color: #FA5959;
 $custom-gray: #dacdcd;
-
-// body {
-//   font-family: Arial, sans-serif;
-//   color: $primary-color;
-// }
 
 //navbar custom bg color
 .custom-bg-color {
@@ -43,40 +38,44 @@ $custom-gray: #dacdcd;
   margin-bottom: 0;
 }
 
+.navbar {
+  background-color: antiquewhite;
+  padding: 0px 0px 0px 0px;
+}
+
+.navbar-collapse {
+  text-align: end;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
 }
 
 .navbar-nav .nav-link {
-  /* font-family: 'Rubik', sans-serif; */
   font-weight: 500;
   font-size: 0.875rem;
 }
 
-
-.btn, .btn-primary .nav-link {
+.btn,
+.btn-primary .nav-link {
   font-weight: 700;
   font-size: 0.875rem;
-  // background-color: $secondary-color;
-  // border-color: $secondary-color;
-  
 }
 
-.collapse, .navbar-collapse {
+.collapse,
+.navbar-collapse {
   text-align: center;
   margin-top: 3px;
-.navbar-nav {
-  // align-items: start;
-  margin-right: 2rem;
+
+  .navbar-nav {
+    margin-right: 2rem;
+  }
+
+  .nav-item {
+    padding: 0px;
+    margin-bottom: -0.5rem;
+  }
 }
-
-.nav-item {
-  padding: 0px;
-  margin-bottom: -0.5rem;
-}  
-}
-
-
 
 .card {
   border: none;
@@ -84,26 +83,20 @@ body {
 
 @media (max-width: 767.8px) {
   .custom-card {
-    transform: scale(1.2); /* Adjust scale as needed */
-    margin-top: 5rem;
-  }
-
-  .custom-card .card-body {
-    padding-right: 2rem ;
+    transform: scale(1.1);
+    margin-top: 3rem;
   }
 
   .custom-card .card-text {
-    font-size: 1.2rem; /* Increase text size */
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    max-width: 100%;
   }
 
   .custom-card .card-title {
-    font-size: 2rem; /* Increase heading size */
+    font-size: 2rem;
     text-align: center;
-  }
-    
-  .custom-card .btn {
-    font-size: 1rem; /* Increase button text size */
-    padding: 0.75rem 1.5rem; /* Increase button padding */
+    max-width: 100%;
   }
 }
 
@@ -127,4 +120,3 @@ body {
   background: #5266df;
   border-bottom-left-radius: 8rem;
 }
-
