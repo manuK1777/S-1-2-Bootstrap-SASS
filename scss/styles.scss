@@ -81,6 +81,12 @@ body {
   border: none;
 }
 
+@media (max-width: 575.8px) {
+  .custom-card {
+    transform: scale(0.7);
+  }
+}
+
 @media (max-width: 767.8px) {
   .custom-card {
     transform: scale(1.1);
@@ -99,6 +105,15 @@ body {
     max-width: 100%;
   }
 }
+
+@media (min-width: 767.9px ) and (max-width: 991.8px) {
+  .custom-card {
+    transform: scale(0.8);
+    margin-bottom: 2rem;
+    padding-left: 0;
+  }
+}
+
 
 .custom-shadow {
   box-shadow: 0 0 10px rgba(119, 111, 111, 0.5);
