@@ -104,6 +104,20 @@ body {
     text-align: center;
     max-width: 100%;
   }
+
+  //features text md sm devices
+  .custom-size-text {
+    font-size: 1.1rem;
+  }
+
+  //features nav tab md devices
+  .custom-nav-tab {
+    flex-direction: column;
+    align-items: center;
+    .nav-link{
+      font-size: 1.2rem;
+    }
+  }
 }
 
 @media (min-width: 767.9px ) and (max-width: 991.8px) {
