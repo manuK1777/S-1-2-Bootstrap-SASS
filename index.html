@@ -14,7 +14,9 @@
 </head>
 
 <body>
-   <div class="container">
+
+    <!-- header, logo y navbar -->
+    <div class="container">
         <header class="container mt-4 pb-5">
             <div class="row pt-2 row align-items-end flex-md-row d-flex">
                 <div class="col-6 col-md-6 col-sm-6 mt-4 align-self-start ps-5">
@@ -23,44 +25,46 @@
                 <div class="col-6 col-md-6 col-sm-6 pe-3">
                     <nav class="navbar navbar-expand-lg navbar-light custom-bg-color">
                         <!-- <div class="container-fluid"> -->
-                            <!-- <div class="d-flex justify-content-end w-100"> -->
-                            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <!-- </div> -->
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link m-2 mt-0" href="#">FEATURES</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link m-2 mt-0" href="#">PRICING</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link m-2 mt-0" href="#">CONTACT</a>
-                                    </li>
-                                    <li class="nav-item ms-4 mb-1">
-                                        <button type="button" class="btn btn-primary" id="loginButton">
-                                            <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3 text-white" href="#">LOGIN</a>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
+                        <!-- <div class="d-flex justify-content-end w-100"> -->
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- </div> -->
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link m-2 mt-0" href="#">FEATURES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link m-2 mt-0" href="#">PRICING</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link m-2 mt-0" href="#">CONTACT</a>
+                                </li>
+                                <li class="nav-item ms-4 mb-1">
+                                    <button type="button" class="btn btn-primary" id="loginButton">
+                                        <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3 text-white" href="#">LOGIN</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
                         <!-- </div> -->
                     </nav>
                 </div>
             </div>
         </header>
-    
+
+        <!-- main content -->
         <main class="container">
             <div class="row flex-column align-items-center flex-md-row"> <!-- d-flex ????????-->
                 <div class="col-md-6 order-2 order-md-1 mt-3 mb-5 align-self-center p-lg-5 text-md-start ps-5 ps-md-0">
                     <div class="card-md custom-card ms-auto me-auto mt-sm-5 pb-3" style="width: 22rem;">
                         <div class="card-body">
                             <h3 class="card-title fw-bold">A Simple Bookmark Manager</h3>
-                            <p class="card-text p-1 text-justify">A clean and simple interface to organize your favourite
+                            <p class="card-text p-1 text-justify">A clean and simple interface to organize your
+                                favourite
                                 websites.
                                 Open a new browser tab and see your sites load instantly. Try it for free</p>
                             <div class="d-flex gap-2">
@@ -81,7 +85,23 @@
                 </div>
             </div>
         </main>
-   </div>
+
+        <!-- product features -->
+        <section class="container">
+            <div class="row justify-content-center" style="background-color: aquamarine;">
+                <div class="col col-6 mt-5">
+                    <h4 class="text-center fw-bold mb-3">Features</h4>
+                    <p class="text-center">Our aim is to make it quick and easy for you to access your
+                        favourite websites. Your bookmarks sync between your devices so you can access
+                        them on the go.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="background-color: rgb(168, 102, 15);">
+                <p>Aquí va el tab</p>
+            </div>
+        </section>
+    </div>
 
     <!-- Incluir el archivo JS de Bootstrap -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
