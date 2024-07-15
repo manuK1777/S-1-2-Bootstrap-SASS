@@ -41,7 +41,7 @@
                                     <a class="nav-link m-2 mt-0" href="#">PRICING</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link m-2 mt-0" href="#">CONTACT</a>
+                                    <a class="nav-link m-2 mt-0" href="#">sharing</a>
                                 </li>
                                 <li class="nav-item ms-4 mb-1">
                                     <button type="button" class="btn btn-primary" id="loginButton">
@@ -64,9 +64,7 @@
                         <div class="card-body">
                             <h3 class="card-title fw-bold">A Simple Bookmark Manager</h3>
                             <p class="card-text p-1 text-justify">A clean and simple interface to organize your
-                                favourite
-                                websites.
-                                Open a new browser tab and see your sites load instantly. Try it for free</p>
+                                favourite websites. Open a new browser tab and see your sites load instantly. Try it for free</p>
                             <div class="d-flex gap-2">
                                 <button type="button" class="btn btn-primary btn-sm mt-2">
                                     <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3 text-white" href="#">Get it on Chrome</a>
@@ -79,7 +77,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 order-1 order-md-2 my-4 my-sm-5 text-center position-relative">
-                    <img src="Imagenes/illustration-hero.svg" class="img-fluid" alt="illustration-hero"
+                    <img src="Imagenes/illustration-hero.svg" class="img-fluid img-main1" alt="computer screen with bookmarks"
                         style="max-width: 100%">
                     <div class="blue-right-shadow"></div>
                 </div>
@@ -103,11 +101,44 @@
             <!-- nav tab -->
             <div class="row">
                 <div class="col col-12 mt-4">
-                    <nav class="nav custom-nav-tab justify-content-center">
-                        <a class="nav-link active" aria-current="page" href="#">Simple Bookmarking</a>
-                        <a class="nav-link" href="#">Speedy Searching</a>
-                        <a class="nav-link" href="#">Easy Sharing</a>
-                      </nav>
+                    <ul class="nav nav-tabs custom-nav-tab justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="bookmarking-tab" data-bs-toggle="tab" data-bs-target="#bookmarking" type="button" role="tab" aria-controls="bookmarking" aria-selected="true">Simple Bookmarking</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="searching-tab" data-bs-toggle="tab" data-bs-target="#searching" type="button" role="tab" aria-controls="searching" aria-selected="false">Speedy Searching</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="sharing-tab" data-bs-toggle="tab" data-bs-target="#sharing" type="button" role="tab" aria-controls="sharing" aria-selected="false">Easy Sharing</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <!-- bookmarking tab -->
+                        <div class="tab-pane fade show active" id="bookmarking" role="tabpanel" aria-labelledby="bookmarking-tab">
+                            <div class="row mt-5">
+                                <div class="col-6 pb-5 position-relative">
+                                    <img src="Imagenes/illustration-features-tab-1.svg" class="img-fluid img-main2" alt="computer screen with bookmarks" style="max-width: 100%">
+                                     <div class="blue-left-shadow"></div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-md custom-card2 ms-5 mt-5" style="width: 22rem;"> <!-- ms-auto me-auto mt-sm-5 pb-3 -->
+                                        <div class="card-body">
+                                            <h4 class="card-title fw-bold mb-3">Bookmark in one click</h4>
+                                            <p class="card-text text-justify">Organize your bookmarks however you like. Our simple drag-and-drop 
+                                                interface gives you complete control over how you manage your favourite sites</p>
+                                            <div class="d-flex gap-2">
+                                                <button type="button" class="btn btn-primary btn-sm mt-2">
+                                                    <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3 text-white" href="#">More Info</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="searching" role="tabpanel" aria-labelledby="searching-tab">...</div>
+                        <div class="tab-pane fade" id="sharing" role="tabpanel" aria-labelledby="sharing-tab">...</div>
+                      </div>                      
                 </div>
             </div>
         </section>
