@@ -19,10 +19,14 @@ $primary-color: #5265E1;
 $secondary-color: #FA5959;
 $custom-gray: #dacdcd;
 
-//navbar custom bg color
-.custom-bg-color {
-  background-color: white;
+body {
+  font-family: 'Rubik', sans-serif;
 }
+
+//navbar custom bg color
+// .custom-bg-color {
+//   background-color: white;
+// }
 
 #loginButton {
   background-color: $secondary-color;
@@ -34,22 +38,20 @@ $custom-gray: #dacdcd;
   border: $custom-gray;
 }
 
-.navbar-text {
-  margin-bottom: 0;
-}
+// .navbar-text {
+//   margin-bottom: 0;
+// }
 
-.navbar {
-  background-color: antiquewhite;
-  padding: 0px 0px 0px 0px;
-}
+// .navbar {
+//   background-color: antiquewhite;
+//   padding: 0px 0px 0px 0px;
+// }
 
-.navbar-collapse {
-  text-align: end;
-}
+// .navbar-collapse {
+//   text-align: end;
+// }
 
-body {
-  font-family: 'Rubik', sans-serif;
-}
+
 
 .navbar-nav .nav-link {
   font-weight: 500;
@@ -61,6 +63,21 @@ body {
   font-weight: 700;
   font-size: 0.875rem;
 }
+
+.navbar-nav .nav-item:hover .nav-link {
+  color: $secondary-color;
+}
+
+// .navbar.navbar-nav.nav-link.active::after {
+//   content: "";
+//   text-decoration: none;
+// }
+
+.navbar .nav-link.active {
+  text-decoration: none;
+}
+
+
 
 .collapse,
 .navbar-collapse {
@@ -114,7 +131,8 @@ body {
   .custom-nav-tab {
     flex-direction: column;
     align-items: center;
-    .nav-link{
+
+    .nav-link {
       font-size: 1.2rem;
     }
   }
@@ -155,6 +173,7 @@ body {
   margin-right: 2rem;
   color: black;
 }
+
 // .nav-link, .active {
 //   border-bottom: 2px solid $secondary-color;
 // }
@@ -167,7 +186,7 @@ body {
 //   padding-top: 0;
 // }
 
-@media (min-width: 767.9px ) and (max-width: 991.8px) {
+@media (min-width: 767.9px) and (max-width: 991.8px) {
   .custom-card {
     transform: scale(0.9);
     margin-bottom: 2rem;
