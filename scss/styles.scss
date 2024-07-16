@@ -23,39 +23,25 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-//navbar custom bg color
-// .custom-bg-color {
-//   background-color: white;
-// }
-
-#loginButton {
-  background-color: $secondary-color;
-  border-color: $secondary-color;
-}
 
 .custom-bg-gray {
   background-color: $custom-gray;
   border: $custom-gray;
 }
 
-// .navbar-text {
-//   margin-bottom: 0;
-// }
-
-// .navbar {
-//   background-color: antiquewhite;
-//   padding: 0px 0px 0px 0px;
-// }
-
-// .navbar-collapse {
-//   text-align: end;
-// }
-
-
+//navbar expanded header
+.nav-item:hover .nav-link {
+  color: $secondary-color;
+}
 
 .navbar-nav .nav-link {
   font-weight: 500;
   font-size: 0.875rem;
+}
+
+#loginButton {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
 }
 
 .btn,
@@ -64,39 +50,78 @@ body {
   font-size: 0.875rem;
 }
 
-.navbar-nav .nav-item:hover .nav-link {
-  color: $secondary-color;
+//navbar collapsed logo
+.navbar-brand-collapsedNavBar {
+  display: none;
 }
 
-// .navbar.navbar-nav.nav-link.active::after {
-//   content: "";
-//   text-decoration: none;
-// }
-
-.navbar .nav-link.active {
-  text-decoration: none;
-}
-
-
-
-.collapse,
-.navbar-collapse {
-  text-align: center;
-  margin-top: 3px;
-
-  .navbar-nav {
-    margin-right: 2rem;
-  }
-
-  .nav-item {
-    padding: 0px;
-    margin-bottom: -0.5rem;
-  }
+//button collapsed navbar
+.btn-close {
+  display: none;
 }
 
 .card {
   border: none;
 }
+
+// features nav tab
+button.nav-link.active#bookmarking-tab,
+button.nav-link.active#searching-tab,
+button.nav-link.active#sharing-tab {
+  border-bottom: #FA5959 2px solid;
+}
+
+
+.nav-link {
+  margin-right: 2rem;
+  color: black;
+}
+
+/* Base styles for the navbar transition*/
+.navbar {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+// /* Styles for the navbar when collapsed */
+// @media (max-width: 991.8px) {
+//   .navbar-collapse {
+//       position: fixed;
+//       top: 0;
+//       left: 0;
+//       width: 100%;
+//       height: 100%;
+//       background-color: #2f354f;
+//       z-index: 1050; /* Ensure it is above other content */
+//       overflow-y: auto; /* Allow scrolling if content overflows */
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//   }
+//   .navbar-collapse .nav-link {
+//       color: #fff; /* Change font color */
+//       font-size: 1.5rem; /* Increase font size */
+//       margin: 1rem 0; /* Add margin between links */
+//   }
+//   .navbar-collapse .nav-link:hover {
+//       color: #d4d4d4; /* Change font color on hover */
+//   }
+//   .navbar-collapse .navbar-brand {
+//       color: #fff; /* Change brand color */
+//       font-size: 2rem; /* Increase brand size */
+//       margin-bottom: 2rem; /* Add space below brand */
+//   }
+
+
+// /* Optional: Add styles for the navbar toggler */
+// .navbar-toggler {
+//   border-color: rgba(255, 255, 255, 0.1);
+// }
+
+// .navbar-toggler-icon {
+//   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%288, 8, 8, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+// }
+// }
 
 @media (max-width: 575.8px) {
   .custom-card {
@@ -105,6 +130,72 @@ body {
 }
 
 @media (max-width: 767.8px) {
+
+  //nav bar collapsed
+  .navbar-collapse {
+
+    .navbar-brand-collapsedNavBar {
+      display: block;
+    }
+
+    .btn-close {
+      display: block;
+      color: white;
+      margin-left: auto;
+    }
+
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
+    // background-color: #2f354f;
+    // z-index: 1050;
+    // /* Ensure it is above other content */
+    // overflow-y: auto;
+    // /* Allow scrolling if content overflows */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(47, 53, 79, 0.85);
+
+    .nav-link {
+      color: white;
+      font-size: 1.1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding: 1rem 10rem 1rem 10rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      border-bottom: rgba(255, 255, 255, 0.25) 1px solid;
+    }
+
+    .nav-link:hover {
+      color: white;
+    }
+
+    .nav-link,
+    .nav-link.active {
+      color: white;
+    }
+
+    .navbar-nav {
+      margin-top: 2rem;
+    }
+
+    #loginButton {
+      background-color: transparent;
+      border-color: white;
+      margin-top: 1rem;
+      border-bottom: 0px;
+    }
+  }
+
   .custom-card {
     transform: scale(1.1);
     margin-top: 3rem;
@@ -136,55 +227,24 @@ body {
       font-size: 1.2rem;
     }
   }
+
+  .custom-card2 {
+    margin-top: 5rem !important;
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+
+  .custom-card2 .card-title {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  #moreInfoBtn {
+    display: none;
+  }
+
 }
-
-//nav tab funcionalitats
-/* CSS */
-// .nav-tabs .nav-item.active .nav-link::after {
-//   //content: '';
-//   display: block;
-//   width: 100%;
-//   height: 2px;
-//   background-color: red; /* You can change this to any color you want */
-// }
-
-// .nav {
-//   --bs-nav-link-color: black;
-//   --bs-nav-tabs-link-active-border-color: transparent;
-//   // --bs-nav-link-hover-color: red;
-//   // --bs-nav-tabs-border-color: #dee2e6;
-//   // --bs-nav-tabs-border-width: 0;
-//   // --bs-nav-tabs-border-radius: 0;
-//   // --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
-//   // --bs-nav-tabs-link-active-color: #495057;
-//   // --bs-nav-tabs-link-active-bg: #fff;
-//   --bs-nav-tabs-link-active-border-color:#FA5959;
-//   --bs-nav-tabs-link-active-border-width: 2px;
-// }
-
-.nav-link.active::after {
-  content: "";
-  border-top: transparent;
-  display: block;
-  border-bottom: 2px solid red;
-}
-
-.nav-link {
-  margin-right: 2rem;
-  color: black;
-}
-
-// .nav-link, .active {
-//   border-bottom: 2px solid $secondary-color;
-// }
-
-// custom card nav tab simple bookmarking
-// .custom-card2 {
-//   transform: scale(0.9);
-//   margin-top: 0;
-//   padding-left: 0;
-//   padding-top: 0;
-// }
 
 @media (min-width: 767.9px) and (max-width: 991.8px) {
   .custom-card {
@@ -194,12 +254,11 @@ body {
   }
 }
 
-
 .custom-shadow {
   box-shadow: 0 0 10px rgba(119, 111, 111, 0.5);
 }
 
-.img-main {
+.img-main1 {
   position: relative;
   z-index: 1;
 }
