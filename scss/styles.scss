@@ -15,7 +15,7 @@ html {
 }
 
 // Variables
-$primary-color: #5265E1;
+$primary-color: #6072e4;
 $secondary-color: #FA5959;
 $custom-gray: #dacdcd;
 
@@ -23,6 +23,9 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+p {
+  color: #746e6e;
+}
 
 .custom-bg-gray {
   background-color: $custom-gray;
@@ -77,52 +80,91 @@ button.nav-link.active#sharing-tab {
   color: black;
 }
 
-/* Base styles for the navbar transition*/
-.navbar {
-  transition: background-color 0.3s, color 0.3s;
+.custom-shadow {
+  box-shadow: 0 0 10px rgba(119, 111, 111, 0.5);
 }
 
-// /* Styles for the navbar when collapsed */
-// @media (max-width: 991.8px) {
-//   .navbar-collapse {
-//       position: fixed;
-//       top: 0;
-//       left: 0;
-//       width: 100%;
-//       height: 100%;
-//       background-color: #2f354f;
-//       z-index: 1050; /* Ensure it is above other content */
-//       overflow-y: auto; /* Allow scrolling if content overflows */
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: center;
-//       align-items: center;
-//   }
-//   .navbar-collapse .nav-link {
-//       color: #fff; /* Change font color */
-//       font-size: 1.5rem; /* Increase font size */
-//       margin: 1rem 0; /* Add margin between links */
-//   }
-//   .navbar-collapse .nav-link:hover {
-//       color: #d4d4d4; /* Change font color on hover */
-//   }
-//   .navbar-collapse .navbar-brand {
-//       color: #fff; /* Change brand color */
-//       font-size: 2rem; /* Increase brand size */
-//       margin-bottom: 2rem; /* Add space below brand */
-//   }
+.img-main1 {
+  position: relative;
+  z-index: 1;
+}
 
+.blue-right-shadow {
+  position: absolute;
+  z-index: -1;
+  left: 30%;
+  top: 0;
+  width: 85%;
+  height: 70%;
+  top: 35%;
+  background: #5266df;
+  border-bottom-left-radius: 8rem;
+}
 
-// /* Optional: Add styles for the navbar toggler */
-// .navbar-toggler {
-//   border-color: rgba(255, 255, 255, 0.1);
+.img-main2 {
+  position: relative;
+  z-index: 1;
+}
+
+.blue-left-shadow {
+  position: absolute;
+  z-index: -1;
+  right: 30%;
+  top: 0;
+  width: 85%;
+  height: 70%;
+  top: 35%;
+  background: #5266df;
+  border-bottom-right-radius: 8rem;
+}
+
+// downloads section
+// .custom-browser-box {
+//   border: rgba($color: #000000, $alpha: 0.1) 1px solid;
+//   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+//   border-radius: 5px;
+//   margin: 0.8rem;
+//   // margin-top: 2.3rem;
+//   // padding-bottom: 1.3rem;
 // }
 
-// .navbar-toggler-icon {
-//   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%288, 8, 8, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-// }
-// }
+#br-box-1, #br-box-2, #br-box-3 {
+  border: rgba($color: #000000, $alpha: 0.1) 1px solid;
+  width: calc(100% / 4);
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0.8rem;
+  margin-top: 2.3rem;
+  padding-bottom: 1.3rem;
+}
 
+.custom-h5-text {
+  font-weight: bold;
+}
+
+.custom-btn {
+  font-size: 0.8rem !important;
+  padding: 0.6rem 1.6rem 0.6rem 1.6rem;
+}
+
+@media (min-width: 767.8px) {
+  #br-box-1 {
+    align-self: flex-start !important;
+  }
+
+  #br-box-2 {
+    margin-top: 30px;
+    align-self: center !important;
+  }
+
+  #br-box-3 {
+    margin-top: 120px !important;
+    align-self: flex-end !important;
+  }
+}
+
+
+//media queries
 @media (max-width: 575.8px) {
   .custom-card {
     transform: scale(0.7);
@@ -243,7 +285,6 @@ button.nav-link.active#sharing-tab {
   #moreInfoBtn {
     display: none;
   }
-
 }
 
 @media (min-width: 767.9px) and (max-width: 991.8px) {
@@ -252,42 +293,4 @@ button.nav-link.active#sharing-tab {
     margin-bottom: 2rem;
     padding-left: 0;
   }
-}
-
-.custom-shadow {
-  box-shadow: 0 0 10px rgba(119, 111, 111, 0.5);
-}
-
-.img-main1 {
-  position: relative;
-  z-index: 1;
-}
-
-.blue-right-shadow {
-  position: absolute;
-  z-index: -1;
-  left: 30%;
-  top: 0;
-  width: 85%;
-  height: 70%;
-  top: 35%;
-  background: #5266df;
-  border-bottom-left-radius: 8rem;
-}
-
-.img-main2 {
-  position: relative;
-  z-index: 1;
-}
-
-.blue-left-shadow {
-  position: absolute;
-  z-index: -1;
-  right: 30%;
-  top: 0;
-  width: 85%;
-  height: 70%;
-  top: 35%;
-  background: #5266df;
-  border-bottom-right-radius: 8rem;
 }
