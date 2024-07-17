@@ -74,15 +74,14 @@ button.nav-link.active#sharing-tab {
   border-bottom: #FA5959 2px solid;
 }
 
-
 .nav-link {
   margin-right: 2rem;
   color: black;
 }
 
-.custom-shadow {
-  box-shadow: 0 0 10px rgba(119, 111, 111, 0.5);
-}
+// .custom-shadow {
+//   box-shadow: 0 0 10px rgba(119, 111, 111, 0.5);
+// }
 
 .img-main1 {
   position: relative;
@@ -128,14 +127,65 @@ button.nav-link.active#sharing-tab {
 //   // padding-bottom: 1.3rem;
 // }
 
-#br-box-1, #br-box-2, #br-box-3 {
-  border: rgba($color: #000000, $alpha: 0.1) 1px solid;
+// #br-box-1, #br-box-2, #br-box-3 {
+//   border: rgba($color: #000000, $alpha: 0.1) 1px solid;
+//   width: calc(100% / 4);
+//   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+//   border-radius: 5px;
+//   margin: 0.8rem;
+//   margin-top: 2.3rem;
+//   padding-bottom: 1.3rem;
+// }
+
+
+
+
+
+// @media (min-width: 767.8px) {
+//   #br-box-1 {
+//     align-self: flex-start !important;
+//   }
+
+//   #br-box-2 {
+//     margin-top: 30px;
+//     align-self: center !important;
+//   }
+
+//   #br-box-3 {
+//     margin-top: 120px !important;
+//     align-self: flex-end !important;
+//   }
+// }
+
+//Downloads browser cards
+.browser-cards {
+  display: flex;
+  height: 550px;
+  justify-content: center;
+}
+
+.browser-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: calc(100% / 4);
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  margin: 0.8rem;
-  margin-top: 2.3rem;
-  padding-bottom: 1.3rem;
+  height: 70%;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px rgb(121, 119, 119);
+  margin: 20px;
+}
+
+#chrome {
+  align-self: flex-start;
+}
+
+#firefox {
+  align-self: center;
+}
+
+#opera {
+  align-self: flex-end;
 }
 
 .custom-h5-text {
@@ -143,34 +193,11 @@ button.nav-link.active#sharing-tab {
 }
 
 .custom-btn {
-  font-size: 0.8rem !important;
+  font-size: 0.9rem !important;
   padding: 0.6rem 1.6rem 0.6rem 1.6rem;
 }
 
-@media (min-width: 767.8px) {
-  #br-box-1 {
-    align-self: flex-start !important;
-  }
-
-  #br-box-2 {
-    margin-top: 30px;
-    align-self: center !important;
-  }
-
-  #br-box-3 {
-    margin-top: 120px !important;
-    align-self: flex-end !important;
-  }
-}
-
-
 //media queries
-@media (max-width: 575.8px) {
-  .custom-card {
-    transform: scale(0.7);
-  }
-}
-
 @media (max-width: 767.8px) {
 
   //nav bar collapsed
@@ -186,16 +213,6 @@ button.nav-link.active#sharing-tab {
       margin-left: auto;
     }
 
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // width: 100%;
-    // height: 100%;
-    // background-color: #2f354f;
-    // z-index: 1050;
-    // /* Ensure it is above other content */
-    // overflow-y: auto;
-    // /* Allow scrolling if content overflows */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,6 +255,7 @@ button.nav-link.active#sharing-tab {
     }
   }
 
+  //main content card "Simple Bookmark Manager"
   .custom-card {
     transform: scale(1.1);
     margin-top: 3rem;
@@ -270,6 +288,7 @@ button.nav-link.active#sharing-tab {
     }
   }
 
+  //features bookmarking tab card "Bookmark in one click"
   .custom-card2 {
     margin-top: 5rem !important;
     font-size: 1.2rem;
@@ -284,6 +303,47 @@ button.nav-link.active#sharing-tab {
 
   #moreInfoBtn {
     display: none;
+  }
+
+  //downloads browser cards
+  .browser-cards {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    min-width: 320px;
+    height: 1100px;
+    margin: 0 auto;
+
+  }
+
+  .browser-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+    height: 90%;
+    align-items: center;
+    border-radius: 15px;
+    margin: 20px;
+  }
+
+  #chrome {
+    align-self: center;
+  }
+
+  #firefox {
+    align-self: center;
+  }
+
+  #opera {
+    align-self: center;
+  }
+}
+
+//media queries for main content card "A simple bookmark manager"
+@media (max-width: 575.8px) {
+  .custom-card {
+    transform: scale(0.7);
   }
 }
 
