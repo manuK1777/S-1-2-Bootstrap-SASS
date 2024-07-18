@@ -197,6 +197,43 @@ button.nav-link.active#sharing-tab {
   padding: 0.6rem 1.6rem 0.6rem 1.6rem;
 }
 
+//FAQs section
+
+// .accordion-button {
+//   background-color: $secondary-color;
+// }
+
+// .accordion-collapse.collapse.show {
+//   color: black !important;
+//   background-color: #746e6e;
+// }
+
+.accordion-header:active {
+  color: black !important;
+}
+
+.h2#flush-headingOne.accordion-header {
+  color: black !important;
+}
+
+#flush-headingOne {
+  color: black !important;
+}
+.accordion-button:hover {
+  color: $secondary-color !important;
+}
+
+.accordion-button:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+
 //media queries
 @media (max-width: 767.8px) {
 
@@ -338,7 +375,44 @@ button.nav-link.active#sharing-tab {
   #opera {
     align-self: center;
   }
+
+  .text-footer {
+    margin-top: 3rem !important;
+  }
 }
+
+// footer
+// #footer .a {
+//   color: white;
+//   text-decoration: none;
+//   font-size: 13px;
+// }
+
+.text-footer {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+// .icons:hover {
+//   background-color: #fa5959;
+
+// }
+
+// #footer a:hover {
+//   color: $secondary !important;
+// }
+
+// .facebook:hover {
+//   filter: brightness(0) saturate(100%) invert(42%) sepia(46%) saturate(812%) hue-rotate(314deg) brightness(107%) contrast(96%);
+// }
+
+// .twitter:hover {
+//   filter: brightness(0) saturate(100%) invert(42%) sepia(46%) saturate(812%) hue-rotate(314deg) brightness(107%) contrast(96%);
+
+// }
+
 
 //media queries for main content card "A simple bookmark manager"
 @media (max-width: 575.8px) {
