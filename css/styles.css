@@ -14,13 +14,8 @@ html {
   /*to override the default browser setup*/
 }
 
-// Variables
-$primary-color: #6072e4;
-$secondary-color: #FA5959;
-$custom-gray: #dacdcd;
-
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 p {
@@ -28,13 +23,12 @@ p {
 }
 
 .custom-bg-gray {
-  background-color: $custom-gray;
-  border: $custom-gray;
+  background-color: #dacdcd;
+  border: #dacdcd;
 }
 
-//navbar expanded header
 .nav-item:hover .nav-link {
-  color: $secondary-color;
+  color: #FA5959;
 }
 
 .navbar-nav .nav-link {
@@ -43,8 +37,8 @@ p {
 }
 
 #loginButton {
-  background-color: $secondary-color;
-  border-color: $secondary-color;
+  background-color: #FA5959;
+  border-color: #FA5959;
 }
 
 .btn,
@@ -53,12 +47,10 @@ p {
   font-size: 0.875rem;
 }
 
-//navbar collapsed logo
 .navbar-brand-collapsedNavBar {
   display: none;
 }
 
-//button collapsed navbar
 .btn-close {
   display: none;
 }
@@ -67,7 +59,6 @@ p {
   border: none;
 }
 
-// features nav tab
 button.nav-link.active#bookmarking-tab,
 button.nav-link.active#searching-tab,
 button.nav-link.active#sharing-tab {
@@ -78,10 +69,6 @@ button.nav-link.active#sharing-tab {
   margin-right: 2rem;
   color: black;
 }
-
-// .custom-shadow {
-//   box-shadow: 0 0 10px rgba(119, 111, 111, 0.5);
-// }
 
 .img-main1 {
   position: relative;
@@ -117,47 +104,6 @@ button.nav-link.active#sharing-tab {
   border-bottom-right-radius: 8rem;
 }
 
-// downloads section
-// .custom-browser-box {
-//   border: rgba($color: #000000, $alpha: 0.1) 1px solid;
-//   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
-//   border-radius: 5px;
-//   margin: 0.8rem;
-//   // margin-top: 2.3rem;
-//   // padding-bottom: 1.3rem;
-// }
-
-// #br-box-1, #br-box-2, #br-box-3 {
-//   border: rgba($color: #000000, $alpha: 0.1) 1px solid;
-//   width: calc(100% / 4);
-//   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
-//   border-radius: 5px;
-//   margin: 0.8rem;
-//   margin-top: 2.3rem;
-//   padding-bottom: 1.3rem;
-// }
-
-
-
-
-
-// @media (min-width: 767.8px) {
-//   #br-box-1 {
-//     align-self: flex-start !important;
-//   }
-
-//   #br-box-2 {
-//     margin-top: 30px;
-//     align-self: center !important;
-//   }
-
-//   #br-box-3 {
-//     margin-top: 120px !important;
-//     align-self: flex-end !important;
-//   }
-// }
-
-//Downloads browser cards
 .browser-cards {
   display: flex;
   height: 550px;
@@ -168,7 +114,7 @@ button.nav-link.active#sharing-tab {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: calc(100% / 4);
+  width: 25%;
   height: 70%;
   align-items: center;
   border-radius: 15px;
@@ -197,17 +143,6 @@ button.nav-link.active#sharing-tab {
   padding: 0.6rem 1.6rem 0.6rem 1.6rem;
 }
 
-//FAQs section
-
-// .accordion-button {
-//   background-color: $secondary-color;
-// }
-
-// .accordion-collapse.collapse.show {
-//   color: black !important;
-//   background-color: #746e6e;
-// }
-
 .accordion-header:active {
   color: black !important;
 }
@@ -219,8 +154,9 @@ button.nav-link.active#sharing-tab {
 #flush-headingOne {
   color: black !important;
 }
+
 .accordion-button:hover {
-  color: $secondary-color !important;
+  color: #FA5959 !important;
 }
 
 .accordion-button:focus {
@@ -233,23 +169,8 @@ button.nav-link.active#sharing-tab {
   box-shadow: none !important;
 }
 
-
-//media queries
 @media (max-width: 767.8px) {
-
-  //nav bar collapsed
   .navbar-collapse {
-
-    .navbar-brand-collapsedNavBar {
-      display: block;
-    }
-
-    .btn-close {
-      display: block;
-      color: white;
-      margin-left: auto;
-    }
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -258,96 +179,80 @@ button.nav-link.active#sharing-tab {
     justify-content: center;
     width: 100%;
     background-color: rgba(47, 53, 79, 0.85);
-
-    .nav-link {
-      color: white;
-      font-size: 1.1rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      padding: 1rem 10rem 1rem 10rem;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      border-bottom: rgba(255, 255, 255, 0.25) 1px solid;
-    }
-
-    .nav-link:hover {
-      color: white;
-    }
-
-    .nav-link,
-    .nav-link.active {
-      color: white;
-    }
-
-    .navbar-nav {
-      margin-top: 2rem;
-    }
-
-    #loginButton {
-      background-color: transparent;
-      border-color: white;
-      margin-top: 1rem;
-      border-bottom: 0px;
-    }
   }
-
-  //main content card "Simple Bookmark Manager"
+  .navbar-collapse .navbar-brand-collapsedNavBar {
+    display: block;
+  }
+  .navbar-collapse .btn-close {
+    display: block;
+    color: white;
+    margin-left: auto;
+  }
+  .navbar-collapse .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding: 1rem 10rem 1rem 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-bottom: rgba(255, 255, 255, 0.25) 1px solid;
+  }
+  .navbar-collapse .nav-link:hover {
+    color: white;
+  }
+  .navbar-collapse .nav-link,
+  .navbar-collapse .nav-link.active {
+    color: white;
+  }
+  .navbar-collapse .navbar-nav {
+    margin-top: 2rem;
+  }
+  .navbar-collapse #loginButton {
+    background-color: transparent;
+    border-color: white;
+    margin-top: 1rem;
+    border-bottom: 0px;
+  }
   .custom-card {
     transform: scale(1.1);
     margin-top: 3rem;
     text-align: center;
   }
-
-  .custom-card .btn {
-    
-  }
-
   .custom-card .card-text {
     margin-top: 1rem;
     font-size: 1.2rem;
     max-width: 100%;
   }
-
   .custom-card .card-title {
     font-size: 2rem;
     text-align: center;
     max-width: 100%;
   }
-
-  //features text md sm devices
   .custom-size-text {
     font-size: 1.1rem;
   }
-
-  //features nav tab md devices
   .custom-nav-tab {
     flex-direction: column;
     align-items: center;
-
-    .nav-link {
-      font-size: 1.2rem;
-    }
   }
-
-  //features bookmarking tab card "Bookmark in one click"
+  .custom-nav-tab .nav-link {
+    font-size: 1.2rem;
+  }
   .custom-card2 {
     margin-top: 5rem !important;
     font-size: 1.2rem;
     max-width: 100%;
   }
-
   .custom-card2 .card-title {
     font-size: 1.5rem;
     text-align: center;
     max-width: 100%;
   }
-
   #moreInfoBtn {
     display: none;
   }
-
-  //downloads browser cards
   .browser-cards {
     display: flex;
     flex-direction: column;
@@ -355,9 +260,7 @@ button.nav-link.active#sharing-tab {
     min-width: 320px;
     height: 1100px;
     margin: 0 auto;
-
   }
-
   .browser-cards .card {
     display: flex;
     flex-direction: column;
@@ -368,31 +271,19 @@ button.nav-link.active#sharing-tab {
     border-radius: 15px;
     margin: 20px;
   }
-
   #chrome {
     align-self: center;
   }
-
   #firefox {
     align-self: center;
   }
-
   #opera {
     align-self: center;
   }
-
   .text-footer {
     margin-top: 3rem !important;
   }
 }
-
-// footer
-// #footer .a {
-//   color: white;
-//   text-decoration: none;
-//   font-size: 13px;
-// }
-
 .text-footer {
   color: white;
   text-decoration: none;
@@ -400,32 +291,11 @@ button.nav-link.active#sharing-tab {
   font-size: 0.875rem;
 }
 
-// .icons:hover {
-//   background-color: #fa5959;
-
-// }
-
-// #footer a:hover {
-//   color: $secondary !important;
-// }
-
-// .facebook:hover {
-//   filter: brightness(0) saturate(100%) invert(42%) sepia(46%) saturate(812%) hue-rotate(314deg) brightness(107%) contrast(96%);
-// }
-
-// .twitter:hover {
-//   filter: brightness(0) saturate(100%) invert(42%) sepia(46%) saturate(812%) hue-rotate(314deg) brightness(107%) contrast(96%);
-
-// }
-
-
-//media queries for main content card "A simple bookmark manager"
 @media (max-width: 575.8px) {
   .custom-card {
     transform: scale(0.7);
   }
 }
-
 @media (min-width: 767.9px) and (max-width: 991.8px) {
   .custom-card {
     transform: scale(0.9);
@@ -433,3 +303,5 @@ button.nav-link.active#sharing-tab {
     padding-left: 0;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
