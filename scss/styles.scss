@@ -34,22 +34,37 @@ p {
 
 .custom-bg-footer-footer {
   background-color: #242946;
-  // margin-left: 0 !important;
-  // margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  // margin-left: 0%;
+  // margin-right: 0%;
+  // width: 100%;
 }
+
+// .custom-padding {
+//   --bs-gutter-x: 0 !important;
+//   --bs-gutter-y: 0 !important;
+//   padding-right: 0 !important;
+//   padding-left: 0 !important;
+//   margin-right: 0 !important;
+//   margin-left: 0 !important;
+// }
+
 
 //navbar expanded header
 .nav-item:hover .nav-link {
   color: $secondary-color;
 }
 
-// .nav-item:hover .nav-link #loginButton {
-//   background-color: transparent;
-// }
+#loginButton:hover,
+#loginButton:hover a {
+  background-color: transparent;
+  color: red !important;
+}
 
-.navbar-nav .nav-link {
-  font-weight: 500;
-  font-size: 0.875rem;
+.navbar-collapse #loginButton:hover {
+  background-color: transparent;
+  color: red !important;
 }
 
 #loginButton {
@@ -57,10 +72,42 @@ p {
   border-color: $secondary-color;
 }
 
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+
+// .btn,
+// .btn-primary .nav-link {
+//   font-weight: 700;
+//   font-size: 0.875rem;
+// }
+
 .btn,
 .btn-primary .nav-link {
   font-weight: 700;
   font-size: 0.875rem;
+}
+
+ .btn-chrome a {
+  color: white !important;
+}
+
+.btn-chrome:hover {
+  background-color: transparent;
+  color: $primary-color;
+}
+
+.btn-chrome:hover a {
+  color: $primary-color !important; 
+}
+
+
+.btn-firefox:hover, .nav-link:hover a {
+  background-color: transparent;
+  color: black !important;
+  border: black 1px solid !important;
 }
 
 //navbar collapsed logo
@@ -83,6 +130,8 @@ button.nav-link.active#searching-tab,
 button.nav-link.active#sharing-tab {
   border-bottom: #FA5959 2px solid;
 }
+
+
 
 .nav-link {
   margin-right: 2rem;
@@ -207,6 +256,14 @@ button.nav-link.active#sharing-tab {
   padding: 0.6rem 1.6rem 0.6rem 1.6rem;
 }
 
+.custom-btn:hover,
+.custom-btn:hover a {
+  background-color: transparent;
+  color: $primary-color !important;
+}
+
+
+
 //FAQs section
 
 // .accordion-button {
@@ -229,6 +286,7 @@ button.nav-link.active#sharing-tab {
 #flush-headingOne {
   color: black !important;
 }
+
 .accordion-button:hover {
   color: $secondary-color !important;
 }
@@ -255,11 +313,37 @@ button.nav-link.active#sharing-tab {
   margin-bottom: 1rem;
 }
 
+.btn.btn-submit:hover,
+.btn.btn-submit:hover a {
+  background-color: white;
+  color: $secondary-color !important;
+}
+
+.invalid-feedback {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+}
+
+.validationCustomEmail {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  color: white;
+}
+
+.cust-foot-txt-div a:hover {
+  color: $secondary-color;
+}
+.facebook:hover {
+  filter: brightness(0) saturate(100%) invert(42%) sepia(46%) saturate(812%) hue-rotate(314deg) brightness(107%) contrast(96%);
+}
+
+.twitter:hover {
+  filter: brightness(0) saturate(100%) invert(42%) sepia(46%) saturate(812%) hue-rotate(314deg) brightness(107%) contrast(96%);
+}
+
 //media queries
 @media (max-width: 767.8px) {
 
- 
-//---------------------------------------------------
   //main content card "Simple Bookmark Manager"
   .custom-card {
     transform: scale(1.1);
@@ -350,20 +434,26 @@ button.nav-link.active#sharing-tab {
     margin-top: 3rem !important;
   }
 
-  
+
+
+  // .nav-item:hover .nav-link {
+  //   color: $secondary-color;
+  // }
+
+
 
   .cust-foot-txt-div {
     padding-top: 1rem;
- 
+
   }
 
- .cust-logo-footer {
-  margin-bottom: 1rem;
- } 
+  .cust-logo-footer {
+    margin-bottom: 1rem;
+  }
 
-.cust-ic-div {
-  margin-top: 1rem;
-}
+  .cust-ic-div {
+    margin-top: 1rem;
+  }
 
 }
 
@@ -395,14 +485,7 @@ button.nav-link.active#sharing-tab {
 //   color: $secondary !important;
 // }
 
-// .facebook:hover {
-//   filter: brightness(0) saturate(100%) invert(42%) sepia(46%) saturate(812%) hue-rotate(314deg) brightness(107%) contrast(96%);
-// }
 
-// .twitter:hover {
-//   filter: brightness(0) saturate(100%) invert(42%) sepia(46%) saturate(812%) hue-rotate(314deg) brightness(107%) contrast(96%);
-
-// }
 
 
 //media queries for main content card "A simple bookmark manager"
@@ -421,9 +504,9 @@ button.nav-link.active#sharing-tab {
 }
 
 @media (max-width: 991.9px) {
-  
-   //nav bar collapsed
-   .navbar-collapse {
+
+  //nav bar collapsed
+  .navbar-collapse {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -434,37 +517,37 @@ button.nav-link.active#sharing-tab {
   }
 
   .navbar-collapse .nav-link {
-      color: black;
-      font-size: 1.1rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      padding: 1rem 10rem 1rem 10rem;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      border-bottom: rgba(14, 0, 0, 0.25) 1px solid;
-    }
+    color: black;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding: 1rem 10rem 1rem 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-bottom: rgba(14, 0, 0, 0.25) 1px solid;
+  }
 
-    .navbar-collapse .nav-link:hover {
-      color: $secondary-color;
-    }
+  .navbar-collapse .nav-link:hover {
+    color: $secondary-color;
+  }
 
-    .navbar-collapse .nav-link .nav-link.active {
-      color: black;
-    }
+  .navbar-collapse .nav-link .nav-link.active {
+    color: black;
+  }
 
-    .navbar-collapse .navbar-nav {
-      margin-top: 2rem;
-    }
+  .navbar-collapse .navbar-nav {
+    margin-top: 2rem;
+  }
 
-    .navbar-collapse #loginButton {
-      background-color: $secondary-color;
-      border-color: $secondary-color;
-      margin-top: 1rem;
-    }
+  .navbar-collapse #loginButton {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    margin-top: 1rem;
+  }
 
-    #logbutt {
-      border-bottom: none;
-    }
-  
+  #logbutt {
+    border-bottom: none;
+  }
+
 }
