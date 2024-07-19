@@ -27,6 +27,10 @@ p {
   border: #dacdcd;
 }
 
+.custom-bg-footer-footer {
+  background-color: #242946;
+}
+
 .nav-item:hover .nav-link {
   color: #FA5959;
 }
@@ -169,52 +173,19 @@ button.nav-link.active#sharing-tab {
   box-shadow: none !important;
 }
 
+.cust-txt-footer {
+  font-family: Arial, Helvetica, sans-serif !important;
+  letter-spacing: 3px;
+  margin-top: 25px;
+}
+
+.cust-h2-footer {
+  margin-top: 2rem;
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 767.8px) {
-  .navbar-collapse {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    justify-content: center;
-    width: 100%;
-    background-color: rgba(47, 53, 79, 0.85);
-  }
-  .navbar-collapse .navbar-brand-collapsedNavBar {
-    display: block;
-  }
-  .navbar-collapse .btn-close {
-    display: block;
-    color: white;
-    margin-left: auto;
-  }
-  .navbar-collapse .nav-link {
-    color: white;
-    font-size: 1.1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding: 1rem 10rem 1rem 10rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    border-bottom: rgba(255, 255, 255, 0.25) 1px solid;
-  }
-  .navbar-collapse .nav-link:hover {
-    color: white;
-  }
-  .navbar-collapse .nav-link,
-  .navbar-collapse .nav-link.active {
-    color: white;
-  }
-  .navbar-collapse .navbar-nav {
-    margin-top: 2rem;
-  }
-  .navbar-collapse #loginButton {
-    background-color: transparent;
-    border-color: white;
-    margin-top: 1rem;
-    border-bottom: 0px;
-  }
   .custom-card {
     transform: scale(1.1);
     margin-top: 3rem;
@@ -283,12 +254,26 @@ button.nav-link.active#sharing-tab {
   .text-footer {
     margin-top: 3rem !important;
   }
+  .cust-foot-txt-div {
+    padding-top: 1rem;
+  }
+  .cust-logo-footer {
+    margin-bottom: 1rem;
+  }
+  .cust-ic-div {
+    margin-top: 1rem;
+  }
 }
 .text-footer {
   color: white;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.875rem;
+}
+
+.btn.btn-submit {
+  background-color: #FA5959;
+  border-color: #FA5959;
 }
 
 @media (max-width: 575.8px) {
@@ -301,6 +286,45 @@ button.nav-link.active#sharing-tab {
     transform: scale(0.9);
     margin-bottom: 2rem;
     padding-left: 0;
+  }
+}
+@media (max-width: 991.9px) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar-collapse .nav-link {
+    color: black;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding: 1rem 10rem 1rem 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-bottom: rgba(14, 0, 0, 0.25) 1px solid;
+  }
+  .navbar-collapse .nav-link:hover {
+    color: #FA5959;
+  }
+  .navbar-collapse .nav-link .nav-link.active {
+    color: black;
+  }
+  .navbar-collapse .navbar-nav {
+    margin-top: 2rem;
+  }
+  .navbar-collapse #loginButton {
+    background-color: #FA5959;
+    border-color: #FA5959;
+    margin-top: 1rem;
+  }
+  #logbutt {
+    border-bottom: none;
   }
 }
 
