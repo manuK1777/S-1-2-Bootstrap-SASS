@@ -33,23 +33,19 @@ p {
 }
 
 .custom-bg-footer-footer {
-  background-color: #242946;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  // margin-left: 0%;
-  // margin-right: 0%;
-  // width: 100%;
+  background-color: #242946; 
 }
 
-// .custom-padding {
-//   --bs-gutter-x: 0 !important;
-//   --bs-gutter-y: 0 !important;
-//   padding-right: 0 !important;
-//   padding-left: 0 !important;
-//   margin-right: 0 !important;
-//   margin-left: 0 !important;
-// }
+.custom-padding-navfoot {
+  padding-left: 68px;
+  padding-right: 68px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+form {
+  padding-bottom: 62px;
+}
 
 //navbar expanded header
 .nav-item:hover .nav-link {
@@ -77,13 +73,6 @@ p {
   font-size: 0.875rem;
 }
 
-
-// .btn,
-// .btn-primary .nav-link {
-//   font-weight: 700;
-//   font-size: 0.875rem;
-// }
-
 .btn,
 .btn-primary .nav-link {
   font-weight: 700;
@@ -102,7 +91,6 @@ p {
 .btn-chrome:hover a {
   color: $primary-color !important; 
 }
-
 
 .btn-firefox:hover, .nav-link:hover a {
   background-color: transparent;
@@ -131,16 +119,10 @@ button.nav-link.active#sharing-tab {
   border-bottom: #FA5959 2px solid;
 }
 
-
-
 .nav-link {
   margin-right: 2rem;
   color: black;
 }
-
-// .custom-shadow {
-//   box-shadow: 0 0 10px rgba(119, 111, 111, 0.5);
-// }
 
 .img-main1 {
   position: relative;
@@ -175,46 +157,6 @@ button.nav-link.active#sharing-tab {
   background: #5266df;
   border-bottom-right-radius: 8rem;
 }
-
-// downloads section
-// .custom-browser-box {
-//   border: rgba($color: #000000, $alpha: 0.1) 1px solid;
-//   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
-//   border-radius: 5px;
-//   margin: 0.8rem;
-//   // margin-top: 2.3rem;
-//   // padding-bottom: 1.3rem;
-// }
-
-// #br-box-1, #br-box-2, #br-box-3 {
-//   border: rgba($color: #000000, $alpha: 0.1) 1px solid;
-//   width: calc(100% / 4);
-//   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
-//   border-radius: 5px;
-//   margin: 0.8rem;
-//   margin-top: 2.3rem;
-//   padding-bottom: 1.3rem;
-// }
-
-
-
-
-
-// @media (min-width: 767.8px) {
-//   #br-box-1 {
-//     align-self: flex-start !important;
-//   }
-
-//   #br-box-2 {
-//     margin-top: 30px;
-//     align-self: center !important;
-//   }
-
-//   #br-box-3 {
-//     margin-top: 120px !important;
-//     align-self: flex-end !important;
-//   }
-// }
 
 //Downloads browser cards
 .browser-cards {
@@ -261,19 +203,6 @@ button.nav-link.active#sharing-tab {
   background-color: transparent;
   color: $primary-color !important;
 }
-
-
-
-//FAQs section
-
-// .accordion-button {
-//   background-color: $secondary-color;
-// }
-
-// .accordion-collapse.collapse.show {
-//   color: black !important;
-//   background-color: #746e6e;
-// }
 
 .accordion-header:active {
   color: black !important;
@@ -434,14 +363,6 @@ button.nav-link.active#sharing-tab {
     margin-top: 3rem !important;
   }
 
-
-
-  // .nav-item:hover .nav-link {
-  //   color: $secondary-color;
-  // }
-
-
-
   .cust-foot-txt-div {
     padding-top: 1rem;
 
@@ -454,15 +375,7 @@ button.nav-link.active#sharing-tab {
   .cust-ic-div {
     margin-top: 1rem;
   }
-
 }
-
-// footer
-// #footer .a {
-//   color: white;
-//   text-decoration: none;
-//   font-size: 13px;
-// }
 
 .text-footer {
   color: white;
@@ -475,18 +388,6 @@ button.nav-link.active#sharing-tab {
   background-color: $secondary-color;
   border-color: $secondary-color;
 }
-
-// .icons:hover {
-//   background-color: #fa5959;
-
-// }
-
-// #footer a:hover {
-//   color: $secondary !important;
-// }
-
-
-
 
 //media queries for main content card "A simple bookmark manager"
 @media (max-width: 575.8px) {
@@ -501,6 +402,10 @@ button.nav-link.active#sharing-tab {
     margin-bottom: 2rem;
     padding-left: 0;
   }
+
+  .custom-mg-footer {
+        margin-left: 38px;
+      }
 }
 
 @media (max-width: 991.9px) {
@@ -551,3 +456,11 @@ button.nav-link.active#sharing-tab {
   }
 
 }
+
+@media (min-width: 991px) {
+
+  .custom-mg-footer {
+    margin-left: 76px;
+  }
+}
+

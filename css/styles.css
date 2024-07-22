@@ -29,8 +29,17 @@ p {
 
 .custom-bg-footer-footer {
   background-color: #242946;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+}
+
+.custom-padding-navfoot {
+  padding-left: 68px;
+  padding-right: 68px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  padding-bottom: 62px;
 }
 
 .nav-item:hover .nav-link {
@@ -354,6 +363,9 @@ button.nav-link.active#sharing-tab {
     margin-bottom: 2rem;
     padding-left: 0;
   }
+  .custom-mg-footer {
+    margin-left: 38px;
+  }
 }
 @media (max-width: 991.9px) {
   .navbar-collapse {
@@ -392,6 +404,11 @@ button.nav-link.active#sharing-tab {
   }
   #logbutt {
     border-bottom: none;
+  }
+}
+@media (min-width: 991px) {
+  .custom-mg-footer {
+    margin-left: 76px;
   }
 }
 
